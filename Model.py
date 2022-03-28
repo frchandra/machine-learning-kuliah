@@ -69,8 +69,7 @@ class LogisticRegressionUsingGD:
         self: An instance of self
         """
 
-        opt_weights = fmin_tnc(func=self.cost_function, x0=theta, fprime=self.gradient,
-                               args=(x, y.flatten()))
+        opt_weights = fmin_tnc(func=self.cost_function, x0=theta, fprime=self.gradient,args=(x, y.flatten()))
         self.w_ = opt_weights[0]
         return self
 
