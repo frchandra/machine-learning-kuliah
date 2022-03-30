@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     print("==========================================================================================\n")
         
-    data = load_data(f"data\{data_path}.txt", None)
+    data = load_data(f"data/{data_path}.txt", None)
 
     # X = feature values, all the columns except the last column
     X = np.array(data.iloc[:, :-1])
